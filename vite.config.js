@@ -4,6 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/thein_reactApp/",
+  base: "/thein-reactApp/",
   plugins: [react(), tailwindcss()],
 });
