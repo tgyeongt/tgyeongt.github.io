@@ -82,15 +82,19 @@ export default function ProjectRow({ project, open, onToggle }: ProjectRowProps)
               <BulletItem key={b} text={b} />
             ))}
           </ul>
-          {p.result && (
+          {p.result.length > 0 && (
             <div className="border-l-[3px] border-ink pt-3 pb-3 pl-4 mb-7 max-w-[720px] font-sans font-medium text-base leading-[1.65]">
               <span className="font-mono font-medium text-[11px] text-accent tracking-[0.08em]">
                 RESULT
               </span>
-              <div className="mt-2">{p.result}</div>
+              <div className="mt-2 flex flex-col gap-1">
+                {p.result.map((r) => (
+                  <div key={r}>{r}</div>
+                ))}
+              </div>
             </div>
           )}
-          <div className="grid grid-cols-1 sm:grid-cols-[repeat(3,minmax(0,410px))] gap-[14px] mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-[repeat(3,minmax(0,410px))] gap-[14px] mb-6 items-start">
             {p.shots.map((sh) => (
               <Shot key={sh.id} shot={sh} />
             ))}

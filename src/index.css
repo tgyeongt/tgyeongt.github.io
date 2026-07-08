@@ -68,8 +68,7 @@ body {
 }
 .img-slot img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
@@ -87,6 +86,10 @@ body {
   /* small uppercase-tracking sub-label above a list (record, activity groups) */
   .group-label {
     @apply font-mono font-semibold text-[11px] tracking-[0.1em] text-[#8a8a8a] mb-1.5;
+  }
+  /* nested sub-header inside a group-label section (e.g. 교외/교내 활동 within 대외활동) */
+  .sub-group-label {
+    @apply font-mono font-medium text-[10.5px] tracking-[0.08em] text-accent mt-4 mb-1.5;
   }
   /* bold accent index number (section numbering, about items) */
   .index-badge {

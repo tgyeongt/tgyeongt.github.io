@@ -38,8 +38,10 @@ export default function Section({
       data-sec={dataSec}
       className={`${padding} scroll-mt-[58px] ${border ? "border-b-2 border-ink" : ""} ${bg} ${textClass}`}
     >
-      <div className="px-6 sm:px-10 lg:px-[15vw]">
-        {head && <SectionHead no={head.no} kicker={head.kicker} title={head.title} />}
+      <div className="px-6 sm:px-12 lg:px-[20vw]">
+        {head && (
+          <SectionHead no={head.no} kicker={head.kicker} title={head.title} />
+        )}
         {children}
       </div>
     </section>

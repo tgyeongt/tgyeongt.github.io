@@ -23,13 +23,18 @@ export default function Nav() {
       },
       { threshold: 0.5 },
     );
-    document.querySelectorAll<HTMLElement>("[data-sec]").forEach((el) => io.observe(el));
+    document
+      .querySelectorAll<HTMLElement>("[data-sec]")
+      .forEach((el) => io.observe(el));
     return () => io.disconnect();
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-[90] h-[58px] flex items-center justify-between px-6 sm:px-10 lg:px-[15vw] border-b border-ink bg-white/[.86] backdrop-blur-[10px]">
-      <a href="#top" className="flex items-center gap-2.5 no-underline text-ink">
+    <nav className="fixed top-0 left-0 right-0 z-[90] h-[58px] flex items-center justify-between px-6 sm:px-12 lg:px-[20vw] border-b border-ink bg-white/[.86] backdrop-blur-[10px]">
+      <a
+        href="#top"
+        className="flex items-center gap-2.5 no-underline text-ink"
+      >
         <span className="w-[11px] h-[11px] bg-accent inline-block" />
         <span className="font-sans font-bold text-[15px] leading-none tracking-[-0.01em]">
           {profile.name}
