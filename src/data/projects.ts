@@ -27,7 +27,7 @@ export const projects = [
     no: "01",
     title: "LIVFIT",
     award: "우수상 수상",
-    sub: "사용자의 운동 자세를 분석하여 올바른 자세로 운동할 수 있도록 돕는 헬스 서비스",
+    sub: "실시간으로 사용자의 운동 자세를 분석하는 헬스 서비스",
     period: "2024.07 – 2024.08",
     role: "프론트엔드 개발",
     team: "5인",
@@ -49,10 +49,13 @@ export const projects = [
     ],
     link: "",
     shots: [
-      { id: "livfit-1", cap: "screen 1" },
-      { id: "livfit-2", cap: "screen 2" },
-      { id: "livfit-3", cap: "screen 3" },
-      { id: "livfit-4", cap: "screen 4" },
+      { id: "livfit-1", cap: "AI 운동 측정 페이지" },
+      {
+        id: "livfit-2",
+        cap: "MediaPipe Pose를 활용하여 실시간 운동 횟수 카운팅 로직",
+      },
+      { id: "livfit-3", cap: "이전 기록과 비교하는 등수 페이지" },
+      { id: "livfit-4", cap: "MediaPipe Pose를 활용하여 거북목 측정" },
     ],
   },
   {
@@ -91,10 +94,10 @@ export const projects = [
     ],
     link: "https://www.stocket.site/",
     shots: [
-      { id: "stocket-1", cap: "기업 분석 페이지" },
-      { id: "stocket-2", cap: "기업 비교 페이지 - 1" },
-      { id: "stocket-3", cap: "기업 비교 페이지 - 2" },
-      { id: "stocket-4", cap: "screen 4" },
+      { id: "stocket-1", cap: "기업 분석 - 성장 가능성 점수" },
+      { id: "stocket-2", cap: "기업 분석 - 성장세 원인 카드" },
+      { id: "stocket-3", cap: "기업 비교 - Recharts를 활용한 4축 비교" },
+      { id: "stocket-4", cap: "기업 비교 - 주가 흐름 비교" },
     ],
   },
   {
@@ -122,10 +125,18 @@ export const projects = [
     ],
     link: "",
     shots: [
-      { id: "pickle-1", cap: "screen 1", img: "pickl-1" },
-      { id: "pickle-2", cap: "screen 2", img: "pickl-2" },
-      { id: "pickle-3", cap: "screen 3", img: "pickl-3" },
-      { id: "pickle-4", cap: "screen 4", img: "pickl-4" },
+      { id: "pickle-1", cap: "전통시장, 대형마트 가격 비교", img: "pickl-1" },
+      {
+        id: "pickle-2",
+        cap: "Recharts를 활용한 식재료 시세 그래프",
+        img: "pickl-2",
+      },
+      { id: "pickle-3", cap: "AI 챗봇 기능", img: "pickl-3" },
+      {
+        id: "pickle-4",
+        cap: "SSE 기반 AI 챗봇 실시간 스트리밍 타이핑 UI 구현",
+        img: "pickl-4",
+      },
     ],
   },
   {
@@ -191,10 +202,10 @@ export const projects = [
     ],
     link: "",
     shots: [
-      { id: "dasijob-1", cap: "AI 음성 네비게이션" },
-      { id: "dasijob-2", cap: "손글씨 자기소개서 OCR 텍스트 변환" },
-      { id: "dasijob-3", cap: "카카오맵 API 연동" },
-      { id: "dasijob-4", cap: "screen 4" },
+      { id: "dasijob-1", cap: "근로자의 건강 상태를 고려한 일자리 추천" },
+      { id: "dasijob-2", cap: "AI 음성 네비게이션" },
+      { id: "dasijob-3", cap: "손글씨 자기소개서 OCR 텍스트 변환" },
+      { id: "dasijob-4", cap: "카카오맵 API 연동" },
     ],
   },
   {
@@ -203,18 +214,24 @@ export const projects = [
     title: "다시입다연구소",
     award: "본선 진출",
     sub: "사회적 기업 '다시입다연구소'의 의류 교환 활동을 디지털화하는 서비스",
-    period: "2025.11 – 2025.12",
+    period: "2025.09 – 2025.12",
     role: "프론트엔드 개발",
     team: "5인",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "GitHub Actions"],
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "WebSocket",
+      "GitHub Actions",
+    ],
     bullets: [
       "framer-motion을 활용한 스플래시 화면 및 페이지 전환 애니메이션 구현",
       "react-hook-form을 활용한 커뮤니티 게시물 작성 폼 구현",
       "Form 입력 데이터 초기화 문제를 Zustand 전역 상태로 해결",
+      "WebSocket 기반 실시간 채팅 기능 구현",
       "KakaoMap API 연동으로 교환 희망 장소 선택 및 위도·경도 저장 기능 구현",
       "GitHub Actions를 활용한 배포 자동화 환경 구축",
-      "사회적 기업 담당자와 요구사항 협의 및 기능 구현",
-      "서비스 발표 자료 제작 및 시연 지원",
+      "사회적 기업 대표님과 요구사항 협의 및 기능 구현",
     ],
     result: [
       "ICT콤플렉스 피우다 프로젝트 본선 진출",
@@ -234,7 +251,11 @@ export const projects = [
         cap: "카카오맵 API를 활용해 거래 장소 설정",
         img: "refitlab-3",
       },
-      { id: "dasiipda-4", cap: "screen 4", img: "refitlab-4" },
+      {
+        id: "dasiipda-4",
+        cap: "WebSocket 기반 실시간 채팅 기능 구현",
+        img: "refitlab-4",
+      },
     ],
   },
   {
@@ -265,7 +286,7 @@ export const projects = [
       { id: "blooming-1", cap: "다국어 환경 지원", img: "festival-1" },
       { id: "blooming-2", cap: "공연 타임 테이블", img: "festival-2" },
       { id: "blooming-3", cap: "부스 안내 지도", img: "festival-3" },
-      { id: "blooming-4", cap: "screen 4", img: "festival-4" },
+      { id: "blooming-4", cap: "다국어 메뉴판 지원", img: "festival-4" },
     ],
   },
   {
@@ -293,10 +314,22 @@ export const projects = [
     ],
     link: "",
     shots: [
-      { id: "likelion-sku-1", cap: "screen 1", img: "likelion-1" },
-      { id: "likelion-sku-2", cap: "screen 2", img: "likelion-2" },
-      { id: "likelion-sku-3", cap: "screen 3", img: "likelion-3" },
-      { id: "likelion-sku-4", cap: "screen 4", img: "likelion-4" },
+      { id: "likelion-sku-1", cap: "홈화면 마감기한 표시", img: "likelion-1" },
+      {
+        id: "likelion-sku-2",
+        cap: "관리자 페이지 - 지원서 생성",
+        img: "likelion-2",
+      },
+      {
+        id: "likelion-sku-3",
+        cap: "관리자 페이지 - 지원서 확인",
+        img: "likelion-3",
+      },
+      {
+        id: "likelion-sku-4",
+        cap: "지원자 페이지 - 면접 날짜 스케줄링",
+        img: "likelion-4",
+      },
     ],
   },
 ] satisfies Project[];
