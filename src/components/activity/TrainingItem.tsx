@@ -1,15 +1,25 @@
 import type { TrainingItem as TrainingItemData } from "../../data/activity";
 
+const imageModules = import.meta.glob<{ default: string }>("../../assets/activity/*.png", {
+  eager: true,
+});
+const images: Record<string, string> = {};
+for (const path in imageModules) {
+  const name = path.match(/([^/]+)\.png$/)?.[1];
+  if (name) images[name] = imageModules[path].default;
+}
+
 interface TrainingItemProps {
   item: TrainingItemData;
   imgId: string;
 }
 
 export default function TrainingItem({ item, imgId }: TrainingItemProps) {
+  const src = item.image ? images[item.image] : undefined;
   return (
     <div className="grid grid-cols-1 sm:grid-cols-[132px_1fr] gap-4 sm:gap-7 py-[26px] items-start divider">
       <div className="img-slot w-[100px] h-[100px] sm:w-[132px] sm:h-[132px]" data-img={imgId}>
-        이미지
+        {src ? <img src={src} alt={item.title} /> : "이미지"}
       </div>
       <div>
         <span className="period-badge">{item.period}</span>

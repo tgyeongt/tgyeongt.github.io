@@ -66,6 +66,9 @@ body {
   text-align: center;
   padding: 8px;
 }
+.img-slot:has(img) {
+  padding: 0;
+}
 .img-slot img {
   width: 100%;
   height: auto;

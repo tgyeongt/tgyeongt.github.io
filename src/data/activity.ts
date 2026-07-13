@@ -4,6 +4,7 @@ export interface TrainingItem {
   desc: string;
   bullets: string[];
   result?: string;
+  image?: string;
 }
 
 export const education = [
@@ -16,6 +17,7 @@ export const education = [
       "Spring Boot · React 기반 풀스택 개발",
     ],
     result: "핀테크 서비스 구조와 금융 IT 산업에 대한 이해도 향상",
+    image: "edu1",
   },
   {
     period: "2025.09–2026.02",
@@ -27,6 +29,7 @@ export const education = [
       "PM · 디자이너 · 개발자와 협업 및 API 명세서 작성",
     ],
     result: "UMC 9기 데모데이 AWS 특별상 수상",
+    image: "edu2",
   },
   {
     period: "2025.03–2025.12",
@@ -38,6 +41,7 @@ export const education = [
       "해커톤 대비 맞춤형 기술 멘토링 · 집중 스터디 운영",
     ],
     result: "운영진 활동으로 리더십 · 커뮤니케이션 역량 강화",
+    image: "edu3",
   },
   {
     period: "2024.03–2024.12",
@@ -49,6 +53,7 @@ export const education = [
       "중앙 해커톤 참여 — 웹 서비스 MVP 최종 빌드 · 배포",
     ],
     result: "멋사 12기 중앙 해커톤 우수상 수상",
+    image: "edu4",
   },
 ] satisfies TrainingItem[];
 
@@ -63,6 +68,7 @@ export const activities = [
       "서비스 사업 모델 검증 및 고도화 수행",
       "앱스토어 출시를 목표로 서비스 런칭 준비",
     ],
+    image: "act1",
   },
   {
     period: "2026.03–현재",
@@ -74,6 +80,7 @@ export const activities = [
       "React 기반 UI 구현 및 백엔드 API 연동",
       "산업 현장의 개발 프로세스 및 협업 방식 학습",
     ],
+    image: "act2",
   },
   {
     period: "2025.09–2025.12",
@@ -85,6 +92,7 @@ export const activities = [
       "본선 진출 및 서비스 발표 진행",
       "심사위원 질의응답을 통해 서비스 가치와 기술적 구현 방안 설명",
     ],
+    image: "act3",
   },
   {
     period: "2025.12–2026.02",
@@ -95,6 +103,7 @@ export const activities = [
       "심사위원 및 참가자 질의응답 진행",
       "AWS 특별상 수상",
     ],
+    image: "act4",
   },
   {
     period: "2024.07–2025.08",
@@ -106,6 +115,7 @@ export const activities = [
       "12기 중앙해커톤 우수상 수상",
       "13기 중앙해커톤 247개 팀 중 상위 10% 기록",
     ],
+    image: "act5",
   },
 ] satisfies TrainingItem[];
 
@@ -119,6 +129,7 @@ export const campusActivities = [
       "실시간 공지, 부스 및 행사 정보 제공 기능 구현",
       "약 1,500명의 실제 사용자 대상 서비스 운영",
     ],
+    image: "act6",
   },
   {
     period: "2025.08–2025.09",
@@ -129,6 +140,7 @@ export const campusActivities = [
       "제한된 기간 내 MVP 개발 및 최종 발표 진행",
       "수상 프로젝트를 발전시켜 '2025 데이콘 새싹 해커톤' 출품",
     ],
+    image: "act7",
   },
   {
     period: "2025.03–2025.03",
@@ -139,6 +151,7 @@ export const campusActivities = [
       "신입생 대상 동아리 홍보 및 교육 과정 안내",
       "개발 경험 및 진로 관련 상담 진행",
     ],
+    image: "act8",
   },
 ] satisfies TrainingItem[];
 
@@ -153,6 +166,7 @@ export const clubs = [
       "사용자 피드백을 공유하고 개선 방향을 도출하기 위한 주간 회고 참여",
       "앱스토어 출시를 목표로 서비스 고도화 및 운영 프로세스 구축",
     ],
+    image: "club1",
   },
   {
     period: "2024.03–2025.12",
@@ -165,6 +179,7 @@ export const clubs = [
       "동아리 홈페이지 기획·디자인·개발을 총괄하며 팀 프로젝트 리딩 경험",
       "동아리 활동을 통해 형성한 네트워크를 바탕으로 교외 공모전 다수 참여",
     ],
+    image: "club2",
   },
   {
     period: "2025.09–2026.02",
@@ -176,15 +191,6 @@ export const clubs = [
       "PM Day에 참여하여 PM과 함께 서비스 실현 가능성 및 기능 구체화 논의",
       "타 대학 학회원들과 연합 팀을 구성하여 프로젝트 수행 및 데모데이 참여",
     ],
-  },
-  {
-    period: "2019.04–2019.12",
-    title: "진명여자고등학교 반크(VANK) 활동",
-    desc: "한국 역사와 문화를 세계에 알리는 사이버외교사절단 동아리",
-    bullets: [
-      "모의 유엔(MUN) 및 학술 토론",
-      "교내 카드뉴스 전시 및 캠페인",
-      "외국인 학생과의 펜팔 교류",
-    ],
+    image: "club3",
   },
 ] satisfies TrainingItem[];
