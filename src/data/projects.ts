@@ -71,9 +71,7 @@ export const projects = [
       "Next.js",
       "Node.js",
       "TypeScript",
-      "FastAPI",
       "PostgreSQL",
-      "Redis",
       "Docker",
       "AWS EC2",
       "GitHub Actions",
@@ -83,14 +81,13 @@ export const projects = [
     bullets: [
       "기업 재무지표·주가를 나란히 비교하는 기업 비교 페이지 구현",
       "Recharts로 레이더·라인·버블 차트 데이터 시각화 구현",
-      "DDART·KIS 데이터 배치 사전 계산으로 API 재호출 없이 응답 최적화",
+      "DART·KIS 데이터 배치 사전 계산으로 API 재호출 없이 응답 최적화",
       "GitHub Actions Cron 기반 주가·재무 데이터 자동 동기화 구축",
       "AWS EC2 기반 서비스 배포 환경 구성",
     ],
     result: [
       "Turborepo 모노레포로 프론트·백엔드·데이터 파이프라인 통합 관리",
       "배치 사전 계산 구조 전환으로 DART API 조회 속도 약 50% 개선",
-      "실서비스 배포·운영",
     ],
     link: "https://www.stocket.site/",
     shots: [
@@ -109,7 +106,15 @@ export const projects = [
     period: "2025.07 – 2025.08",
     role: "프론트엔드 개발, UI/UX 디자인",
     team: "5인",
-    stack: ["React", "JavaScript", "Styled-Components", "Zustand"],
+    stack: [
+      "React",
+      "JavaScript",
+      "Zustand",
+      "Recharts",
+      "AWS S3",
+      "CloudFront",
+      "GitHub Actions",
+    ],
     bullets: [
       "공공 API 연동으로 월별 제철 식재료 목록 및 상세 정보 페이지 구현",
       "Recharts를 활용해 식재료 시세를 1일·12달·5년 단위로 조회하는 그래프 구현",
@@ -120,8 +125,7 @@ export const projects = [
     ],
     result: [
       "247개 참가 팀 중 상위 10% 기록",
-      "AI 챗봇 기능 구현을 통해 사용자 맞춤형 구매 경험 제공",
-      "부스 운영을 통해 사용자 피드백 수집 및 서비스 개선 방향 도출",
+      "AI 챗봇 기능 구현을 통해 사용자 맞춤 경험 제공",
     ],
     link: "",
     shots: [
@@ -165,10 +169,13 @@ export const projects = [
     ],
     link: "",
     shots: [
-      { id: "donakawa-1", cap: "AI 상담 챗봇 - 1" },
-      { id: "donakawa-2", cap: "AI 상담 챗봇 - 2" },
-      { id: "donakawa-3", cap: "위시템 토너먼트" },
-      { id: "donakawa-4", cap: "screen 4" },
+      { id: "donakawa-1", cap: "AI 구매 상담 챗봇" },
+      {
+        id: "donakawa-2",
+        cap: "사용자가 전달한 데이터를 기반으로 AI가 구매 판단",
+      },
+      { id: "donakawa-4", cap: "위시템 토너먼트 후보 선택" },
+      { id: "donakawa-3", cap: "위시템 토너먼트 진행" },
     ],
   },
   {
@@ -267,7 +274,13 @@ export const projects = [
     period: "2025.04 – 2025.05",
     role: "프론트엔드 개발",
     team: "8인",
-    stack: ["React", "TypeScript", "TanStack Query"],
+    stack: [
+      "React",
+      "TypeScript",
+      "TanStack Query",
+      "framer-motion",
+      "dotLottie",
+    ],
     bullets: [
       "framer-motion과 dotLottie를 활용한 랜딩 페이지 진입 애니메이션 구현",
       "react-i18next를 활용해 한국어·영어·중국어·일본어 다국어 지원 환경 구축",
@@ -286,7 +299,11 @@ export const projects = [
       { id: "blooming-1", cap: "다국어 환경 지원", img: "festival-1" },
       { id: "blooming-2", cap: "공연 타임 테이블", img: "festival-2" },
       { id: "blooming-3", cap: "부스 안내 지도", img: "festival-3" },
-      { id: "blooming-4", cap: "다국어 메뉴판 지원", img: "festival-4" },
+      {
+        id: "blooming-4",
+        cap: "유학생들을 위한 다국어 메뉴판 지원",
+        img: "festival-4",
+      },
     ],
   },
   {
@@ -309,12 +326,15 @@ export const projects = [
     result: [
       "동아리 공식 홈페이지 런칭",
       "실 사용자 300명 확보",
-      "10인 팀 프로젝트 리딩",
       "기획·디자인·개발 전 과정 주도",
     ],
     link: "",
     shots: [
-      { id: "likelion-sku-1", cap: "홈화면 마감기한 표시", img: "likelion-1" },
+      {
+        id: "likelion-sku-1",
+        cap: "지원 마감까지 남은 기간 실시간 표시",
+        img: "likelion-1",
+      },
       {
         id: "likelion-sku-2",
         cap: "관리자 페이지 - 지원서 생성",

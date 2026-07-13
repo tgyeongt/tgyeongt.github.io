@@ -22,7 +22,7 @@ export default function Shot({ shot }: { shot: ProjectShot }) {
       >
         {src ? <img src={src} alt={shot.cap} /> : shot.cap}
       </div>
-      <div className="mt-[7px] font-mono text-[11px] text-[#9a9a9a]">
+      <div className="mt-[7px] font-mono text-[12px] text-[#757575]">
         {shot.cap}
         {!src && " · 410×800"}
       </div>
